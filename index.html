@@ -1,31 +1,39 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You, Shiena</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>I Love You</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fce4ec; /* Coquette background */
+            height: 100vh;
+        }
+        #downloadBtn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #b71c1c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        #downloadBtn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
 </head>
 <body>
-    <div class="background">
-        <header>
-            <h1>Thank You, Shiena</h1>
-        </header>
-        <main>
-            <p>Dear Shiena,</p>
-            <p>Even though we're miles apart, you make every day brighter with your love and endless stories. 
-               Thank you for being my girlfriend and for sticking with me through thick and thin. No matter what challenges we face, 
-               my love for you only grows stronger.</p>
-        </main>
-        <div class="flower-bouquet">
-            <div class="flower"></div>
-            <div class="stem"></div>
-        </div>
-        <footer>
-            <p>P.S. Keep being the amazing yapper I adore. ❤️</p>
-        </footer>
-    </div>
     <script src="script.js"></script>
+    <button id="downloadBtn">Download Artwork</button>
 </body>
 </html>
