@@ -1,12 +1,3 @@
-// Heart animation using GSAP
-gsap.fromTo("#heart", { scale: 1 }, { scale: 1.3, repeat: -1, yoyo: true, duration: 1.5, ease: "sine.inOut" });
+gsap.fromTo("#heart", { scale: 0.8, opacity: 0 }, { scale: 1.1, opacity: 1, repeat: -1, yoyo: true, duration: 1.5, ease: "power1.inOut" });
 
-// Bouquet floating animation
-gsap.to("#bouquet", {
-    opacity: 1,
-    duration: 3,
-    repeat: -1,
-    yoyo: true,
-    ease: "ease-in-out",
-    delay: 2
-});
+gsap.fromTo("#bouquet", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "bounce.out", delay: 1 });
