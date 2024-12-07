@@ -1,0 +1,73 @@
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    background: #fce4ec;
+    color: #4a4a4a;
+}
+
+.background {
+    background: linear-gradient(to bottom, #f8bbd0 0%, #fce4ec 100%);
+    padding: 2em;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #b71c1c;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+.flower-bouquet {
+    margin: 2em auto;
+    width: 100px;
+    height: 150px;
+    position: relative;
+    animation: growBouquet 2s ease-out forwards;
+}
+
+.flower {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #ff1744, #d50000);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stem {
+    width: 10px;
+    height: 100px;
+    background: #2e7d32;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+footer p {
+    font-size: 1em;
+    color: #4a4a4a;
+    margin-top: 2em;
+}
+
+@keyframes growBouquet {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
